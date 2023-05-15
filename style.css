@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    background: #1f242d;
+    color: #fff
+}
+
+a {
+    color: #6ac464
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 0 20px #6ac464;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideDown .5s ease forwards;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .5s;
+    opacity: 0;
+    animation: slideDown .5s ease forwards;
+    animation-delay: calc(.075s * var(--i));
+}
+
+.navbar a.active,
+.navbar a:hover {
+    color: #6ac464;
+    text-shadow: 0 0 20px #6ac464;
+}
+
+.home {
+    position: relative;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content h3 span {
+    color: #6ac464
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0
+}
+
+.home-content p {
+    font-size: 16px
+}
+
+.social-media a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #6ac464;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #6ac464;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: #6ac464;
+    color: #1f242d;
+    box-shadow: 0 0 20px #6ac464;
+}
+
+.home-img img {
+    max-width: 450px;
+}
+
+
+
+/* KEYFRAMES ANIMATION */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
