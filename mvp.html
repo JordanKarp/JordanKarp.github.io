@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>MVP Translate</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="'Translate' your text into MVP!" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v1.1.0/modern-normalize.min.css" rel="stylesheet"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="mvp.css" />
+    <script type="text/javascript" src="mvp_converter.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <i class='bx bx-menu bx-md' id="menu-icon"></i>
+        <h1>
+            <span style='color: blue'>M</span><span style='color: red'>V</span><span style='color: green'>P</span>
+            Translate
+        </h1>
+        <i class='bx bx-user-circle bx-lg' id="user-icon"><a href="https://translate.google.com/"></a></i>
+    </header>
+    <section class="translate-area">
+        <section class="lang-picker-header">
+            <h2 class="pick-lang">English</h2>
+            <!-- <img id="swap-icon"> -->
+            <h2 class="pick-lang">MVP</h2>
+        </section>
+        <section class="translate-section">
+            <section class="box" id="input-box">
+                <textarea class="text" id="text-input" onkeyup="processText()" maxlength="5000"></textarea>
+                <!-- <img id="mic_icon"> -->
+                <h5 id="letter-count">0 / 5000</h5>
+            </section>
+            <section class="box" id="output-box">
+                <div class="text" id="results">Translation</div>
+                <h5 id="feedback">Send feedback</h5>
+            </section>
+
+        </section>
+    </section>
+    <footer>
+        <p><a href="/">About this project</a> - made by Jordan Karp</p>
+    </footer>
+
+    <script>
+        function processText() {
+            const text = document.getElementById("text-input").value
+            const count_section = document.getElementById("letter-count");
+            count_section.innerText = text.length + " / 5000"
+
+            if (event.keyCode == 13) {
+                event.preventDefault();
+                const output = document.getElementById("results");
+                const mvp_text = mvp_convert(text)
+                output.innerText = mvp_text;
+            }
+        }
+    </script>
+</body>
+
+</html>
