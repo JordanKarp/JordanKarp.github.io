@@ -1,0 +1,35 @@
+* {
+    /* border: 1px solid red; */
+}
+
+
+#project-main {
+    position: relative;
+    width: 100vw;
+    padding: 5vw;
+
+}
+
+#project-list {
+    display: flex;
+
+}
+
+.project {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    padding: 5px;
+
+}
+
+.proj-bkg {
+    padding: 5px;
+}
+
+.proj-title {
+    padding: 5px;
+
+}
+
+.proj-summary {}
