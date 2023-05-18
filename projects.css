@@ -11,25 +11,38 @@
 }
 
 #project-list {
-    display: flex;
+    /* display: grid; */
+    /* grid-template-columns: 2;
+    grid-template-rows: 2; */
+    /* flex-direction: column; */
 
 }
 
 .project {
     text-decoration: none;
     color: inherit;
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    /* gap: 10px; */
+    grid-auto-rows: minmax(200px, auto);
+    justify-content: center;
+    align-items: center;
     padding: 5px;
 
 }
+
 
 .proj-bkg {
-    padding: 5px;
-}
-
-.proj-title {
-    padding: 5px;
+    grid-column: 1;
+    width: 250px;
 
 }
 
-.proj-summary {}
+/* .proj-title {
+    grid-column: 2;
+
+}
+
+.proj-summary {
+    grid-column: 3;
+} */
