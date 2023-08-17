@@ -17,58 +17,116 @@
     <header class="header">
         <a href="index.html" class="logo">Jordan Karp.</a>
         <nav class="navbar">
-            <a href="#" style="--i:1;" class="active">Home</a>
-            <a href="#projects" style="--i:2;">Projects</a>
-            <a href="#contact" style="--i:3;">Contact</a>
+            <a href="#games">Games</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <main>
         <section class="hero">
-            <div class="hero-content">
-                <!-- <h1>Jordan Karp</h1>
-                <h3>Software Engineer</h3> -->
-                <p>Thanks for vising my website! It's still a work in progress (aren't we all?) but I hope you enjoy!
-                </p>
-        </section>
-
-        <section id="projects">
-            <h2>Check out some of my projects:</h2>
-            <div id="project-list">
-                <a class="project" id="diagramless" href="https://github.com/JordanKarp/diagramless_solver">
-                    <img class="proj-bkg" id="diagramless_bkg" src="images/diagramless_gif.gif">
-                    <div class="proj-text">
-                        <h3 class="proj-title">Diagramless Crossword Builder</h3>
-                        <p class="proj-summary">A builder for a diagramless crossword puzzle's grid, using only clue
-                            numbers.
-                        </p>
-                    </div>
-                </a>
-                <a class="project" id="mvp" href="mvp_converter/index.html">
-                    <img class="proj-bkg" id="mvp_bkg" src="images/mvp.png">
-                    <div class="proj-text">
-                        <h3 class="proj-title">MVP Translator</h3>
-                        <p class="proj-summary">A text converter, that changes any input text into MVP text, text with a
-                            lot of accents and other diadiacritical marks.</p>
-                    </div>
-                </a>
-                <a class="project" id="minesweeper" href="minesweeper/index.html">
-                    <img class="proj-bkg" id="mvp_bkg" src="images/minesweeper.png">
-                    <div class="proj-text">
-                        <h3 class="proj-title">Minesweeper</h3>
-                        <p class="proj-summary">A simple Minesweeper game.</p>
-                    </div>
-                </a>
-                <a class="project" id="wordle" href="wordle_clone/src/index.html">
-                    <img class="proj-bkg" id="mvp_bkg" src="images/wordle.png">
-                    <div class="proj-text">
-                        <h3 class="proj-title">Wordle</h3>
-                        <p class="proj-summary">A simple Wordle game.</p>
-                    </div>
-                </a>
+            <div class="about-me">
+                <p>Thanks for vising my website! It's still a work in progress (aren't we all?) but I hope you enjoy!</p>
             </div>
         </section>
+        <section id="games">
+            <h1>Games:</h1>
+            <div class="games">
+                <div class="card game" id="minesweeper">
+                    <a href="minesweeper/index.html" class="card-bkg" target="_blank">
+                        <img src="./images/minesweeper.png" alt="An image of the Minesweeper game">
+                    </a>
+                    <div class="card-content">
+                        <h2 class="card-title">Minesweeper</h2>
+                        <p class="card-summary">A minesweeper game, with a few different difficulty levels.</p>
+                        <div class="card-links">
+                            <a href="minesweeper/index.html" target="_blank">Live Demo</a>
+                            <a href="https://github.com/JordanKarp/minesweeper" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card game" id="wordle">
+                    <a href="wordle_clone/src/index.html" class="card-bkg" target="_blank">
+                        <img src="./images/wordle.png" alt="An image of the Minesweeper game">
+                    </a>
+                    <div class="card-content">
+                        <h2 class="card-title">Wordle</h2>
+                        <p class="card-summary">A game of Wordle.</p>
+                        <div class="card-links">
+                            <a href="wordle_clone/src/index.html" target="_blank">Live Demo</a>
+                            <a href="https://github.com/JordanKarp/wordle_clone" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section  id="projects">
+            <h1>Projects:</h1>
+            <div class="projects">
 
-        <section id="contact">
+                <!-- Example Card
+                <div class="card">
+                    <a href="project_demo_link" class="card-bkg" target="_blank">
+                        <img src="./images/grid.png" alt="Project Image">
+                    </a>
+                    <div class="card-content">
+                        <h2 class="card-title">Project Title</h2>
+                        <p class="card-summary">Project summary text here.</p>
+                        <div class="card-links">
+                            <a href="project_demo_link" target="_blank">Live Demo</a>
+                            <a href="github_repo_link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+                <div class="card" id="diagramless">
+                    <a href="https://github.com/JordanKarp/diagramless_solver" class="card-bkg" target="_blank">
+                        <img src="./images/diagramless_gif.gif" alt="A diagramless crossword puzzle being solved GIF">
+                    </a>
+                    <div class="card-content">
+                        <h2 class="card-title">Diagramless Crossword Builder</h2>
+                        <p class="card-summary">A python project that is able to build the diagram for a diagramless crossword, using only clue numbers.</p>
+                        <div class="card-links">
+                            <a href="" style="text-decoration: line-through;" class="disabled" target="_blank">Live Demo</a>
+                            <a href="https://github.com/JordanKarp/diagramless_solver" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="mvp">
+                    <a href="mvp_converter/index.html" class="card-bkg" target="_blank">
+                        <img src="./images/mvp.png" alt="An image of the MVP converter website">
+                    </a>
+                    <div class="card-content">
+                        <h2 class="card-title">MVP Text Coverter</h2>
+                        <p class="card-summary">A text converter, that changes any input text into MVP text, text with a
+                            lot of accents and other diadiacritical marks.</p>
+                        <div class="card-links">
+                            <a href="mvp_converter/index.html" target="_blank">Live Demo</a>
+                            <a href="https://github.com/JordanKarp/mvp_converter" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <a href="project_demo_link" class="card-bkg" target="_blank">
+                        <img src="./images/grid.png" alt="Project Image">
+                    </a>
+                    <div class="card-content">
+                        <h2 class="card-title">Project Title</h2>
+                        <p class="card-summary">Project summary text here.</p>
+                        <div class="card-links">
+                            <a href="project_demo_link" target="_blank">Live Demo</a>
+                            <a href="github_repo_link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class='contact' id="contact">
             <h1> Contact me through email here:</h1>
 
             <div class="social-media">
