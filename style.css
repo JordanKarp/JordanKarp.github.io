@@ -5,6 +5,8 @@
     --color-400: #8a9d5a;
     --color-300: #b7daa2;
     --color-100: #dfefcf;
+    --grid-item--min-width: calc(1vw - 2rem);
+    --grid-item--max-width: calc(400px - 3rem);
 }
 
 * {
@@ -13,6 +15,7 @@
     box-sizing: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
+    max-width: 100%;
     /* border: 1px solid red; */
 }
 
@@ -28,7 +31,6 @@ body {
     position: sticky;
     top: 0;
     background-color: var(--color-300); 
-    /* opacity: 80%; */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     z-index: 100; /* Ensure the header is above other content */
     display: flex; /* Add flex display to align logo and navbar */
@@ -48,8 +50,7 @@ body {
 .navbar {
     display: flex;
     align-items: center; /* Center items vertically */
-    margin-left: auto; /* Push the navbar to the right */
-    padding: 15px 20px; /* Add padding to the navbar */
+    margin-left: auto; 
   }
 
   /* Style for navbar links */
@@ -71,7 +72,7 @@ body {
     display: flex;
     align-items: center; /* Center content vertically */
     padding: 0 20px; /* Add padding to the sides */
-    color: #ffffff; /* Set text color to white */
+    color: var(--color-100); /* Set text color to white */
   }
 
   /* Style for the about me text */
@@ -81,14 +82,14 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow to the text box */
-    margin-left: auto; /* Push the about-me box to the right */
+    margin-left: auto; 
   }
   
   /* Style for the text inside the about-me box */
   .about-me p {
     margin: 0;
     font-size: 16px;
-    color: #ffffff; /* Set text color to white */
+    color: var(--color-100); /* Set text color to white */
   }
   
 section h1 {
@@ -98,7 +99,8 @@ section h1 {
 
 /* Apply styles to the projects section */
 .projects {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));    flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 1rem;
@@ -107,8 +109,8 @@ section h1 {
 
   /* Apply styles to the projects section */
 .games {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));    flex-wrap: wrap;
     justify-content: space-between;
     margin: 1rem;
     gap: 30px; /* Add spacing between projects */
@@ -116,7 +118,7 @@ section h1 {
   
   /* Style for each project */
   .card {
-    width: calc(50% - 15px); /* Two projects per column if space allows */    
+    /* width: calc(50% - 15px);  */
     padding: 1rem;
     background-color: var(--color-300);
     border: 1px solid var(--color-800);
@@ -189,5 +191,60 @@ section h1 {
     pointer-events: none;
 }
 .game {
-   background-color: var(--color-400);
+   background-color: var(--color-300);
 }
+
+
+/* Apply styles to the contact section */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 1rem;
+  }
+  
+  /* Style for the contact form */
+  .contact-form {
+    flex: 1;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize:none;
+  }
+  
+  .contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style for the contact icons */
+  .contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+    justify-content: flex-end;
+  }
+  
+  .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
