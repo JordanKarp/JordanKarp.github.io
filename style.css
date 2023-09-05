@@ -254,7 +254,8 @@ section h1, h1 {
 /* Style for the contact icons */
 .contact-icons {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
   flex: 1;
