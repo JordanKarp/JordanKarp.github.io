@@ -42,7 +42,7 @@ body {
     font-size: 24px; /* Adjust the size as needed */
     font-weight: bold;
     text-decoration: none;
-    color: var(--color-800); 
+    color: white; 
     padding: 10px 20px; /* Add padding to the logo */
   }
 
@@ -214,6 +214,10 @@ section h1 {
     /* padding: .5rem; */
     /* margin: 1rem; */
     /* padding: 1rem; */
+  }
+
+  .contact-form form {
+    padding: 1rem;
   }
 
   .contact-form input,
