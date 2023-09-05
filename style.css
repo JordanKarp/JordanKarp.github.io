@@ -201,7 +201,7 @@ section h1 {
 
 
 /* Apply styles to the contact section */
-.contact {
+.contact div{
     display: flex;
     justify-content: space-between;
     gap: 30px;
