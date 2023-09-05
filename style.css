@@ -39,7 +39,7 @@ body {
 
   /* Style for the logo */
 .logo {
-    font-size: 24px; /* Adjust the size as needed */
+    font-size:2rem; /* Adjust the size as needed */
     font-weight: bold;
     text-decoration: none;
     color: var(--color-800); 
