@@ -42,7 +42,7 @@ body {
     font-size: 24px; /* Adjust the size as needed */
     font-weight: bold;
     text-decoration: none;
-    color: white; 
+    color: var(--color-800); 
     padding: 10px 20px; /* Add padding to the logo */
   }
 
@@ -72,7 +72,7 @@ body {
     display: flex;
     align-items: center; /* Center content vertically */
     padding: 0 20px; /* Add padding to the sides */
-    color: var(--color-100); /* Set text color to white */
+    color: white; /* Set text color to white */
   }
 
   /* Style for the about me text */
@@ -201,88 +201,88 @@ section h1 {
 
 
 /* Apply styles to the contact section */
-.contact div{
+.contact {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     margin: 1rem;
-  }
-  
-  /* Style for the contact form */
-  .contact-form {
-    flex: 1;
-    /* padding: .5rem; */
-    /* margin: 1rem; */
-    /* padding: 1rem; */
-  }
+}
 
-  .contact-form form {
-    padding: 1rem;
-  }
+/* Style for the contact form */
+.contact-form {
+  flex: 1;
+  /* padding: .5rem; */
+  /* margin: 1rem; */
+  /* padding: 1rem; */
+}
 
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0;
-    transition: box-shadow .35s;
-    resize:none;
-  }
-  
-  .contact-form button {
-    background-color: #333;
-    color: #fff;
-    width: 100%;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0;
-    transition: box-shadow .35s;
-    cursor: pointer;
-  }
+.contact-form form {
+  padding: 1rem;
+}
 
-  .contact-form input:focus,
-  .contact-form textarea:focus,
-  .contact-form button:focus {
-    box-shadow: .5rem .5rem .5rem var(--color-700);
-  }
-  /* Style for the contact icons */
-  .contact-icons {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
-    flex: 1;
-    /* justify-content: flex-end; */
-    /* border: 1px solid red; */
-  }
-  
-  .icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 2rem;
-  }
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0;
+  transition: box-shadow .35s;
+  resize:none;
+}
 
-  .icon a {
-    text-decoration: none;
-    color: var(--color-800);
-    padding: 1rem;
-    border-radius: 1rem;
+.contact-form button {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0;
+  transition: box-shadow .35s;
+  cursor: pointer;
+}
 
-    box-shadow: 0;
-    transition: box-shadow 0.35s;
-  }
-  .icon a:hover {
-    box-shadow: .5rem .5rem .5rem var(--color-700);
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form button:focus {
+  box-shadow: .5rem .5rem .5rem var(--color-700);
+}
+/* Style for the contact icons */
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1;
+  /* justify-content: flex-end; */
+  /* border: 1px solid red; */
+}
 
-  }
-  
-  .icon i {
-    width: 100%;
-    height: 100%;
-  }
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.icon a {
+  text-decoration: none;
+  color: var(--color-800);
+  padding: 1rem;
+  border-radius: 1rem;
+
+  box-shadow: 0;
+  transition: box-shadow 0.35s;
+}
+.icon a:hover {
+  box-shadow: .5rem .5rem .5rem var(--color-700);
+
+}
+
+.icon i {
+  width: 100%;
+  height: 100%;
+}
