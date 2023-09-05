@@ -89,14 +89,15 @@ body {
   /* Style for the text inside the about-me box */
   .about-me p {
     margin: 0;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--color-100); /* Set text color to white */
   }
   
 
-h1 {
+section h1, h1 {
     padding: 1rem;
     padding-bottom: 0;
+    font-size: 2rem
 }
 
 /* Apply styles to the projects section */
