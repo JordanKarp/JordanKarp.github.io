@@ -251,16 +251,15 @@ section h1, h1 {
 .contact-form button:focus {
   box-shadow: .5rem .5rem .5rem var(--color-700);
 }
+
 /* Style for the contact icons */
 .contact-icons {
   display: flex;
-  /* flex-direction: column; */
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
   flex: 1;
-  /* justify-content: flex-end; */
-  /* border: 1px solid red; */
 }
 
 .icon {
