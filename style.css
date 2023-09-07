@@ -116,7 +116,7 @@ section h1, h1 {
     /* width: calc(50% - 15px);  */
     padding: 1rem;
     background-color: var(--color-300);
-    border: 1px solid var(--color-800);
+    border: 2px solid var(--color-800);
     border-radius: 1rem;
     display: flex;
     box-shadow: 0 ;
