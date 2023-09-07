@@ -172,7 +172,8 @@ section h1, h1 {
   
   .card-links a {
     display: inline-block;
-    margin-right: 1rem;
+    margin: 0 1rem;
+    padding:0 .5rem;
     /* text-decoration: none; */
     color: #333333;
   }
