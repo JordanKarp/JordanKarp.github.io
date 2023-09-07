@@ -172,7 +172,6 @@ section h1, h1 {
   
   .card-links a {
     display: inline-block;
-    margin: 0 1rem;
     padding:0 .5rem;
     /* text-decoration: none; */
     color: #333333;
@@ -181,11 +180,10 @@ section h1, h1 {
 
   .card-links a:hover {
     display: inline-block;
-    /* margin-right: 10px; */
     text-decoration: underline;
     color: var(--color-600);
   }
-  .card-tools {
+  /* .card-tools {
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
@@ -193,10 +191,11 @@ section h1, h1 {
   }
   .card-tools i {
     font-size:2rem;
-  }
+  } */
 
 .disabled {
     pointer-events: none;
+    text-decoration: line-through;
 }
 .game {
    background-color: var(--color-300);
