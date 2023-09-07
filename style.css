@@ -181,7 +181,7 @@ section h1, h1 {
 
   .card-links a:hover {
     display: inline-block;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     text-decoration: underline;
     color: var(--color-600);
   }
