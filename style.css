@@ -197,6 +197,11 @@ section h1, h1 {
     pointer-events: none;
     text-decoration: line-through;
 }
+
+.under-construction {
+  border-image: repeating-linear-gradient( -75deg, yellow, yellow 10px, black 10px, black 20px) 20;
+}
+
 .game {
    background-color: var(--color-300);
 }
