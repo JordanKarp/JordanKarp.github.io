@@ -199,7 +199,7 @@ section h1, h1 {
 }
 
 .under-construction {
-  border: solid 10px;
+  border: solid 20px;
   border-image: repeating-linear-gradient( -75deg, yellow, yellow 10px, black 10px, black 20px) 20;
 }
 
