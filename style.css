@@ -213,7 +213,7 @@ section h1, h1 {
 .contact {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 1rem;
     margin: 1rem;
 }
 
