@@ -75,7 +75,7 @@ body {
   }
 
   /* Style for the about me text */
-  .about-me {
+  .hero-about-me {
     max-width: 50%; /* Limit text width */
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     padding: 20px;
@@ -202,6 +202,7 @@ section h1, h1 {
 
 .about-me {
   display: flex;
+  justify-content: center;
 }
 
 .about-me p {
