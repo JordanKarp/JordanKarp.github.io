@@ -200,12 +200,12 @@ section h1, h1 {
    background-color: var(--color-300);
 }
 
-.about-me {
+.about-me-paragraphs {
   display: flex;
   justify-content: center;
 }
 
-.about-me p {
+.about-me-paragraphs p {
   padding: 1rem;
   margin: 1rem;
 
