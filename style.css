@@ -111,13 +111,7 @@ section h1, h1 {
   }
 
 .game {
-  position: fixed;
-  inset: 0 auto auto 0;
-  background: #08769b;
-  transform-origin: 100% 0;
-  transform: translate(-29.3%) rotate(-45deg);
-  box-shadow: 0 0 0 999px #08769b;
-  clip-path: inset(0 -100%);
+    box
 }
   
   
@@ -135,9 +129,12 @@ section h1, h1 {
   }
   .card:hover{
     box-shadow: .5rem .5rem .5rem var(--color-700);
-
   }
   
+  .game:hover{
+    box-shadow: .5rem .5rem .5rem var(--color-600);
+  }
+
   /* Style for the project image */
   .card-bkg {
     flex: 0 0 40%; 
