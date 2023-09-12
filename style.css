@@ -221,9 +221,7 @@ section h1, h1 {
     margin: 1rem;
 }
 
-.contact > * {
-  margin-bottom: 1rem;
-}
+
 
 .contact-info {
   margin: 0 auto;
@@ -234,6 +232,9 @@ section h1, h1 {
   padding: 1rem;
 }
 
+.contact-info > * {
+  margin-bottom: 1rem;
+}
 
 .contact-form {
   display: flex;
