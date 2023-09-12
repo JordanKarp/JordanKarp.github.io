@@ -209,7 +209,8 @@ section h1, h1 {
 .about-me-paragraphs p {
   padding: 1rem;
   margin: 1rem;
-  color: var(--color-800)
+  color: var(--color-800);
+  font-size: 1rem;
 
 }
 
