@@ -221,7 +221,7 @@ section h1, h1 {
     margin: 1rem;
 }
 
-.contact * {
+.contact > * {
   margin-bottom: 1rem;
 }
 
