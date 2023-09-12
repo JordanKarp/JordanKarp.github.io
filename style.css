@@ -242,7 +242,9 @@ section h1, h1 {
   border-radius: 10px;
 }
 
-.contact-form * {
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
   border-radius: 10px;
   padding: .5rem
 }
