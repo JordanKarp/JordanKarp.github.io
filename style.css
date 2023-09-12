@@ -221,6 +221,10 @@ section h1, h1 {
     margin: 1rem;
 }
 
+.contact h1 {
+  align-self: baseline;
+  padding: 0;
+}
 
 
 .contact-info {
