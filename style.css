@@ -158,18 +158,17 @@ section h1, h1 {
     flex: 1;
     padding: 0 20px;
 
-
   }
-  
-  /* Style for the project title */
-  .card-title {
 
-  }
-  
-  /* Style for the project summary */
-  .card-summary {
+  .card-content > * {
     margin-top: 1rem;
+
   }
+  .card-icons {
+    font-size: 2rem;
+    text-align: center;
+  }
+
   
   /* Style for the project links */
   .card-links {
@@ -180,7 +179,6 @@ section h1, h1 {
   .card-links a {
     display: inline-block;
     padding:0 .5rem;
-    /* text-decoration: none; */
     color: #333333;
   }
  
