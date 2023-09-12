@@ -231,6 +231,10 @@ section h1, h1 {
   padding: 1rem;
 }
 
+.contact-form a {
+  display: inline;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -253,13 +257,13 @@ section h1, h1 {
   flex: 1;
 }
 
-/* .icon {
-  display: flex;
+.icon {
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: center; */
   font-size: 2rem;
-} */
+}
 
 .icon a {
   text-decoration: none;
