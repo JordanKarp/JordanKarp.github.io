@@ -215,10 +215,11 @@ section h1, h1 {
 
 /* Apply styles to the contact section */
 .contact {
-    /* display: flex; */
-    /* justify-content: center; */
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 1rem;
+    padding: 1rem;
 }
 
 /* Style for the contact icons */
