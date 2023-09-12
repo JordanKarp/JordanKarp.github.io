@@ -215,8 +215,8 @@ section h1, h1 {
 
 /* Apply styles to the contact section */
 .contact {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     gap: 1rem;
     margin: 1rem;
 }
