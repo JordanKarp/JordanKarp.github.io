@@ -101,7 +101,7 @@ section h1, h1 {
 }
 
 /* Apply styles to the projects section */
-.projects, .games {
+.projects{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));    flex-wrap: wrap;
     flex-wrap: wrap;
@@ -110,6 +110,15 @@ section h1, h1 {
     gap: 30px; /* Add spacing between projects */
   }
 
+.game {
+  position: fixed;
+  inset: 0 auto auto 0;
+  background: #08769b;
+  transform-origin: 100% 0;
+  transform: translate(-29.3%) rotate(-45deg);
+  box-shadow: 0 0 0 999px #08769b;
+  clip-path: inset(0 -100%);
+}
   
   
   /* Style for each project */
