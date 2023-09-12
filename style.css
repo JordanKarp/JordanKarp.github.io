@@ -208,7 +208,6 @@ section h1, h1 {
 
 .about-me-paragraphs p {
   padding: 1rem;
-  margin: 1rem;
   color: var(--color-800);
   font-size: 1rem;
 
@@ -217,7 +216,7 @@ section h1, h1 {
 /* Apply styles to the contact section */
 .contact {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1rem;
     margin: 1rem;
 }
