@@ -217,6 +217,7 @@ section h1, h1 {
 .contact {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .contact-info {
@@ -228,9 +229,6 @@ section h1, h1 {
   padding: 1rem;
 }
 
-.contact-form a {
-  display: inline;
-}
 
 .contact-form {
   display: flex;
@@ -242,6 +240,10 @@ section h1, h1 {
   margin: .5rem;
   border-radius: 10px;
   padding: .5rem
+}
+
+textarea {
+  resize: none;
 }
 
 /* Style for the contact icons */
