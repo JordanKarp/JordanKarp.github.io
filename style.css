@@ -239,7 +239,8 @@ section h1, h1 {
 
 .contact-form * {
   margin: .5rem;
-  border-radius: 50%;
+  border-radius: 10px;
+  padding: .5rem
 }
 
 /* Style for the contact icons */
