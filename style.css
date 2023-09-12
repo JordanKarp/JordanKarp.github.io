@@ -224,6 +224,22 @@ section h1, h1 {
 
 .contact-info {
   margin: 0 auto;
+  max-width: 600px;
+  min-width: 360px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.contact-form * {
+  margin: .5rem;
+  border-radius: 50%;
 }
 
 /* Style for the contact icons */
