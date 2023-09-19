@@ -286,11 +286,11 @@ textarea {
   border-radius: 1rem;
 
   box-shadow: 0;
-  transition: box-shadow 0.35s;
+  transition: all 0.35s;
 }
 .icon a:hover {
   box-shadow: .4rem .4rem .4rem var(--color-700);
-
+  color: var(--color-600)
 }
 
 .icon i {
