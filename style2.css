@@ -71,7 +71,7 @@ body {
 #games,
 #about-me,
 #contact {
-  background-color: #2b2f4b;
+  background-color: var(--color-800);
   padding: 40px;
 }
 
@@ -102,6 +102,7 @@ body {
 .card {
   padding: 30px;
   margin: 1rem 0;
+  background-color: var(--color-700);
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);
   border-radius: 20px;
   display: flex;
@@ -153,6 +154,7 @@ body {
 
 .card-links {
   margin: 1rem 1rem 0 1rem;
+  text-align: center;
 }
 .card-links a {
   color: #fff;
