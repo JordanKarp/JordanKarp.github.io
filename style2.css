@@ -1,0 +1,224 @@
+:root {
+    --color-800: #132a13;
+    --color-700: #31572c;
+    --color-600: #4f772d;
+    --color-400: #8a9d5a;
+    --color-300: #b7daa2;
+    --color-100: #dfefcf;
+    --icon-color: #aaa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    max-width: 100%;
+    /* border: 1px solid red; */
+}
+
+body {
+    font-size: 14px;
+  }
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  background: url('./images/jk_hero.jpg') left top / cover no-repeat; /* Replace with your image path */
+
+}
+
+.hero .info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  height: 100vh;
+}
+
+.hero .info-text h1 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.hero .info-text h3,
+.hero .info-text p {
+  font-size: 1rem;
+}
+  
+.hero .info-text .scroll {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  color: #fff;
+  transform: translate(0, -50%);
+  transition: all 0.5s;
+  font-size: 1.4rem;
+}
+
+.hero .info-text .scroll:hover {
+  opacity: 0.5;
+}
+
+#projects,
+#games,
+#about-me,
+#contact {
+  background-color: #2b2f4b;
+  padding: 40px;
+}
+
+.sectionHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+}
+
+.sectionHead h1 {
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #fff;
+}
+
+.sectionContent {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  gap: 2rem;
+}
+
+.card {
+  padding: 30px;
+  margin: 1rem 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+  border-radius: 20px;
+  display: flex;
+  gap: 15px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  min-width: 505px; 
+  max-width: 700px; 
+  flex: 1;
+}
+
+.card:hover {
+  border-color: #fff;
+  box-shadow: none;
+}
+
+.card img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.card-title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.card-summary {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.card-icons {
+  color: var(--icon-color);
+  font-size: 2rem;
+  margin: .5rem 0;
+}
+
+
+.card-links {
+  margin: 1rem 1rem 0 1rem;
+}
+.card-links a {
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(255,255,255,0.35);
+  border: 1px solid transparent;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+.card-links a:hover {
+  border-color: #fff;
+  box-shadow: none;
+}
+
+.about-me-text p {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* TODO add contact stuff */
+
+
+.scroll-top {
+  display:none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2b2f4b;
+  color: #fff;
+  border: 1px solid transparent;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+  padding: 16px 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.scroll-top:hover {
+  border-color: #fff;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 720px) {
+  .hero .info-text h1 {
+    font-size: 4rem;
+
+  }
+
+  .hero .info-text h3,
+  .hero .info-text p {
+    font-size: .9rem;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .card-links a{
+    padding: .5rem;
+  }
+}

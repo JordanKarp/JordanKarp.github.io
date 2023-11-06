@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style2.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -26,14 +26,20 @@
     </header>
     <main>
         <section class="hero">
-            <div class="hero-about-me">
-                <p>Hi, I'm Jordan, a passionate self-motivated developer and problem solver. Plus I enjoy making games. Thanks for checking out my website!</p>
+            <div class="info-text">
+                <p>Hi, my name is</p>
+                <h1>Jordan Karp</h1>
+                <!-- <p>Hi, I'm Jordan, a passionate self-motivated developer and problem solver. Plus I enjoy making games. Thanks for checking out my website!</p> -->
+                <h3>A Web developer and software engineer - with roots in sales.</h3>
+                <a href="#projects" class="scroll"><i class='bx bxs-chevron-down-circle'></i></a>
             </div>
         </section>
         <section  id="projects">
-            <h1>Projects:</h1>
-            <div class="projects">
-                <div class="card python" id="diagramless">
+            <div class="sectionHead">
+                <h1>Projects</h1>
+            </div>
+            <div class="sectionContent">
+                <div class="card" id="diagramless">
                     <a href="https://github.com/JordanKarp/diagramless_solver" class="card-bkg" target="_blank">
                         <img src="./images/diagramless_gif.gif" alt="A diagramless crossword puzzle being solved GIF">
                     </a>
@@ -50,26 +56,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card game" id="anagramer">
-                    <a href="https://anagramer.netlify.app/" class="card-bkg" target="_blank">
-                        <img src="./images/anagramer.png" alt="An image of the Minesweeper game">
-                    </a>
-                    <div class="card-content">
-                        <h2 class="card-title">Anagramer</h2>
-                        <p class="card-summary">Find all the anagrams of a word. Earn points, learn words, and become an anagram master! A React game invented by Jordan.</p>
-                        <div class="card-icons">
-                            <i class='bx bxl-html5' ></i>
-                            <i class='bx bxl-css3' ></i>
-                            <i class='bx bxl-javascript' ></i>
-                            <i class='bx bxl-react' ></i>
-                        </div>
-                        <div class="card-links">
-                            <a href="https://anagramer.netlify.app/" target="_blank">Live Demo</a>
-                            <a href="https://github.com/JordanKarp/Anagramer-JS" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-               <div class="card" id="local-library">
+                <div class="card" id="local-library">
                     <a href="https://local-library-production-4442.up.railway.app/" class="card-bkg" target="_blank">
                         <img src="./images/locallibrary.png" alt="An image of the Local Library project">
                     </a>
@@ -85,25 +72,6 @@
                         <div class="card-links">
                             <a href="https://local-library-production-4442.up.railway.app/" target="_blank">Live Demo</a>
                             <a href="https://github.com/JordanKarp/Local-Library" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card game" id="flag-memory">
-                    <a href="https://flagmemorygame-jordankarp.netlify.app/" class="card-bkg" target="_blank">
-                        <img src="./images/flag_memory.png" alt="An image of the Flag Memory Game">
-                    </a>
-                    <div class="card-content">
-                        <h2 class="card-title">Flag Memory</h2>
-                        <p class="card-summary">A memory game with flags. Pick any flag, but be sure not to repeat yourself. Used FlagsAPI.com to build my first React game.</p>
-                        <div class="card-icons">
-                            <i class='bx bxl-html5' ></i>
-                            <i class='bx bxl-css3' ></i>
-                            <i class='bx bxl-javascript' ></i>
-                            <i class='bx bxl-react' ></i>
-                        </div>
-                        <div class="card-links">
-                            <a href="https://flagmemorygame-jordankarp.netlify.app/" target="_blank">Live Demo</a>
-                            <a href="https://github.com/JordanKarp/flag-memory-game" target="_blank">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -125,24 +93,24 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="card" id="digidraw">
                     <a href="/digi-draw/index.html" class="card-bkg" target="_blank">
                         <img src="./images/digidraw.png" alt="An image of the Digidraw website">
                     </a>
                     <div class="card-content">
-                        <h2 class="card-title">Digi-Draw</h2>
-                        <p class="card-summary">A basic pixel art painting tool.</p>
-                        <div class="card-icons">
-                            <i class='bx bxl-html5' ></i>
-                            <i class='bx bxl-css3' ></i>
-                            <i class='bx bxl-javascript' ></i>
-                        </div>
-                        <div class="card-links">
-                            <a href="/digi-draw/index.html" target="_blank">Live Demo</a>
-                            <a href="https://github.com/JordanKarp/digi-draw" target="_blank">GitHub</a>
-                        </div>
+              
+                    <h2 class="card-title">Digi-Draw</h2>
+                    <p class="card-summary">A basic pixel art painting tool.</p>
+                    <div class="card-icons">
+                        <i class='bx bxl-html5' ></i>
+                        <i class='bx bxl-css3' ></i>
+                        <i class='bx bxl-javascript' ></i>
                     </div>
+                    <div class="card-links">
+                        <a href="/digi-draw/index.html" target="_blank">Live Demo</a>
+                        <a href="https://github.com/JordanKarp/digi-draw" target="_blank">GitHub</a>
+                    </div>
+                </div>
                 </div>
                 <div class="card" id="cover-letter-gen">
                     <a href="https://coverlettergenerator-jordankarp.netlify.app/" class="card-bkg" target="_blank">
@@ -163,25 +131,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card game" id="minesweeper">
-                    <a href="minesweeper/index.html" class="card-bkg" target="_blank">
-                        <img src="./images/minesweeper.png" alt="An image of the Minesweeper game">
-                    </a>
-                    <div class="card-content">
-                        <h2 class="card-title">Minesweeper</h2>
-                        <p class="card-summary">A minesweeper game, with a few different difficulty levels including custom settings. Made with JavaScript.</p>
-                        <div class="card-icons">
-                            <i class='bx bxl-html5' ></i>
-                            <i class='bx bxl-css3' ></i>
-                            <i class='bx bxl-javascript' ></i>
-                        </div>
-                        <div class="card-links">
-                            <a href="minesweeper/index.html" target="_blank">Live Demo</a>
-                            <a href="https://github.com/JordanKarp/minesweeper" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card game" id="pgstate">
+                <div class="card" id="pgstate">
                     <a href="https://github.com/JordanKarp/Pygame-State-Manager" class="card-bkg" target="_blank">
                         <img src="./images/pgstate.gif" alt="An image of the Minesweeper game">
                     </a>
@@ -195,24 +145,6 @@
                         <div class="card-links">
                             <a href="" class="disabled" target="_blank">Live Demo</a>
                             <a href="https://github.com/JordanKarp/Pygame-State-Manager" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card game" id="wordle">
-                    <a href="wordle_clone/index.html" class="card-bkg" target="_blank">
-                        <img src="./images/wordle.png" alt="An image of the Wordle game">
-                    </a>
-                    <div class="card-content">
-                        <h2 class="card-title">Wordle</h2>
-                        <p class="card-summary">A game of Wordle. Made with JavaScript.</p>
-                        <div class="card-icons">
-                            <i class='bx bxl-html5' ></i>
-                            <i class='bx bxl-css3' ></i>
-                            <i class='bx bxl-javascript' ></i>
-                        </div>
-                        <div class="card-links">
-                            <a href="wordle_clone/index.html" target="_blank">Live Demo</a>
-                            <a href="https://github.com/JordanKarp/wordle_clone" target="_blank">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -231,24 +163,6 @@
                         <div class="card-links">
                             <a href="/simple-book-library/index.html" target="_blank">Live Demo</a>
                             <a href="https://github.com/JordanKarp/Simple-Book-Library" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card game" id="breakout">
-                    <a href="breakout/index.html" class="card-bkg" target="_blank">
-                        <img src="./images/breakout.png" alt="An image of the Breakout game">
-                    </a>
-                    <div class="card-content">
-                        <h2 class="card-title">Breakout</h2>
-                        <p class="card-summary">A game of Breakout. Made using a JavaScript Canvas</p>
-                        <div class="card-icons">
-                            <i class='bx bxl-html5' ></i>
-                            <i class='bx bxl-css3' ></i>
-                            <i class='bx bxl-javascript' ></i>
-                        </div>
-                        <div class="card-links">
-                            <a href="breakout/index.html" target="_blank">Live Demo</a>
-                            <a href="https://github.com/JordanKarp/breakout" target="_blank">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -271,34 +185,131 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </section>
+
+        <section  id="games">
+            <div class="sectionHead">
+                <h1>Games</h1>
+            </div>
+            <div class="sectionContent">
+                <div class="card" id="anagramer">
+                    <a href="https://anagramer.netlify.app/" class="card-bkg" target="_blank">
+                        <img src="./images/anagramer.png" alt="An image of the Minesweeper game">
+                    </a>
+                    <div class="card-content">
+                        <h2 class="card-title">Anagramer</h2>
+                        <p class="card-summary">Find all the anagrams of a word. Earn points, learn words, and become an anagram master! A React game invented by Jordan.</p>
+                        <div class="card-icons">
+                            <i class='bx bxl-html5' ></i>
+                            <i class='bx bxl-css3' ></i>
+                            <i class='bx bxl-javascript' ></i>
+                            <i class='bx bxl-react' ></i>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://anagramer.netlify.app/" target="_blank">Live Demo</a>
+                            <a href="https://github.com/JordanKarp/Anagramer-JS" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="flag-memory">
+                    <a href="https://flagmemorygame-jordankarp.netlify.app/" class="card-bkg" target="_blank">
+                        <img src="./images/flag_memory.png" alt="An image of the Flag Memory Game">
+                    </a>
+                    <div class="card-content">
+                        <h2 class="card-title">Flag Memory</h2>
+                        <p class="card-summary">A memory game with flags. Pick any flag, but be sure not to repeat yourself. Used FlagsAPI.com to build my first React game.</p>
+                        <div class="card-icons">
+                            <i class='bx bxl-html5' ></i>
+                            <i class='bx bxl-css3' ></i>
+                            <i class='bx bxl-javascript' ></i>
+                            <i class='bx bxl-react' ></i>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://flagmemorygame-jordankarp.netlify.app/" target="_blank">Live Demo</a>
+                            <a href="https://github.com/JordanKarp/flag-memory-game" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="minesweeper">
+                    <a href="minesweeper/index.html" class="card-bkg" target="_blank">
+                        <img src="./images/minesweeper.png" alt="An image of the Minesweeper game">
+                    </a>
+                    <div class="card-content">
+                        <h2 class="card-title">Minesweeper</h2>
+                        <p class="card-summary">A minesweeper game, with a few different difficulty levels including custom settings. Made with JavaScript.</p>
+                        <div class="card-icons">
+                            <i class='bx bxl-html5' ></i>
+                            <i class='bx bxl-css3' ></i>
+                            <i class='bx bxl-javascript' ></i>
+                        </div>
+                        <div class="card-links">
+                            <a href="minesweeper/index.html" target="_blank">Live Demo</a>
+                            <a href="https://github.com/JordanKarp/minesweeper" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="wordle">
+                    <a href="wordle_clone/index.html" class="card-bkg" target="_blank">
+                        <img src="./images/wordle.png" alt="An image of the Wordle game">
+                    </a>
+                    <div class="card-content">
+                        <h2 class="card-title">Wordle</h2>
+                        <p class="card-summary">A game of Wordle. Made with JavaScript.</p>
+                        <div class="card-icons">
+                            <i class='bx bxl-html5' ></i>
+                            <i class='bx bxl-css3' ></i>
+                            <i class='bx bxl-javascript' ></i>
+                        </div>
+                        <div class="card-links">
+                            <a href="wordle_clone/index.html" target="_blank">Live Demo</a>
+                            <a href="https://github.com/JordanKarp/wordle_clone" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="breakout">
+                    <a href="breakout/index.html" class="card-bkg" target="_blank">
+                        <img src="./images/breakout.png" alt="An image of the Breakout game">
+                    </a>
+                    <div class="card-content">
+                        <h2 class="card-title">Breakout</h2>
+                        <p class="card-summary">A game of Breakout. Made using a JavaScript Canvas</p>
+                        <div class="card-icons">
+                            <i class='bx bxl-html5' ></i>
+                            <i class='bx bxl-css3' ></i>
+                            <i class='bx bxl-javascript' ></i>
+                        </div>
+                        <div class="card-links">
+                            <a href="breakout/index.html" target="_blank">Live Demo</a>
+                            <a href="https://github.com/JordanKarp/breakout" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
         <section id="about-me" class="about-me">
-            <h1>About me:</h1>
-            <div class="about-me-paragraphs">
-                <p>Hi, I'm Jordan and I believe in tackling problems head on. I love learning, finding solutions and helping others.</p>
-                <p>I started my career in direct sales because I wanted to learn how to understand people. How my customers thought and felt drove how I could best provide for them. </p>
-                <p>But I realized I wasn't creating solutions. I wanted to be the one who could figure out the issue as well as the answer. I needed to keep learning. </p>
-                <p>After an introductory Python class, I started building skills toward a career in development. I had found a technical and creative outlet in programming. I fell in love with the structure and power and logic of it. I knew this was for me.</p>
-                <p>I started working with developers. I built games and more advanced personal projects. I'm teaching myself the foundations of modern development, and while I'm by no means an expert, I am someone who finds solutions.</p>
-                <p>I'm ready to take on a role as a developer and provide  both human and technical insight. Hire me?</p>
+            <div class="sectionHead">
+                <h1>About Me</h1>
+            </div>
+            <div class="sectionContent">
+                <div class="about-me-text">
+                    <p>Hi, I'm Jordan and I believe in tackling problems head on. I love learning, finding solutions and helping others.</p>
+                    <p>I started my career in direct sales because I wanted to learn how to understand people. How my customers thought and felt drove how I could best provide for them. </p>
+                    <p>But I realized I wasn't creating solutions. I wanted to be the one who could figure out the issue as well as the answer. I needed to keep learning. </p>
+                    <p>After an introductory Python class, I started building skills toward a career in development. I had found a technical and creative outlet in programming. I fell in love with the structure and power and logic of it. I knew this was for me.</p>
+                    <p>I started working with developers. I built games and more advanced personal projects. I'm teaching myself the foundations of modern development, and while I'm by no means an expert, I am someone who finds solutions.</p>
+                    <p>I'm ready to take on a role as a developer and provide  both human and technical insight. Hire me?</p>
+                </div>
             </div>
         </section>
-
 
         <section id="contact" class="contact">
-            <h1>Contact:</h1>
+            <div class="sectionHead">
+                <h1>Contact</h1>
+            </div>
             <div class="contact-info">
-                <!-- <p>If you have an opportunity to share, or would like to discuss anything, I'd love to chat! Please leave your details below, or reach out to me through <a href="mailto:jordanmatthew.karp@gmail.com">email</a>!</p>
-                <form class="contact-form">
-                    <input class="input-name" name="name"  placeholder="Name" maxlength="128" aria-label="Name" required>
-                    <input class="input-email" type="email" name="email" placeholder="E-mail" aria-label="Email" maxlength="128" required>
-                    <textarea class="input-message" name="message" placeholder="Message" aria-label="Message" rows="4" required></textarea>
-                    <button class="input-submit" typ="submit">Send</button>
-                </form>
-                <p>or reach me here:</p> -->
+      
                 <div class="contact-icons">
                     <!-- <div class="icon">
                         <a href="mailto:jordanmatthew.karp@gmail.com" title="Email" target="_blank">
@@ -323,6 +334,8 @@
                 </div>
             </div>
         </section>
+
+        <button class="scroll-top" onclick="scrollToTop()"><i class='bx bxs-chevron-up-circle'></i></button>
     </main>
     <footer>
         <p>© Copyright 2023, Jordan Karp</p>
