@@ -5,301 +5,310 @@
     --color-400: #8a9d5a;
     --color-300: #b7daa2;
     --color-100: #dfefcf;
-    --grid-item--min-width: calc(1vw - 2rem);
-    --grid-item--max-width: calc(400px - 3rem);
+    --icon-color: #aaa;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-    max-width: 100%;
-    /* border: 1px solid red; */
-}
-
-/* Apply some basic styles to the whole page */
-body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-100);
-  }
-  
-  /* Style for the header section */
-.header {
-    position: sticky;
-    top: 0;
-    background-color: var(--color-300); 
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    z-index: 100; /* Ensure the header is above other content */
-    display: flex; /* Add flex display to align logo and navbar */
-    align-items: center; /* Center items vertically */
-  }
-
-  /* Style for the logo */
-.logo {
-    font-size:2rem; /* Adjust the size as needed */
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--color-800); 
-    padding: 10px 20px; /* Add padding to the logo */
-  }
-
-  /* Style for the navbar */
-.navbar {
-    display: flex;
-    align-items: center; /* Center items vertically */
-    margin-left: auto; 
-  }
-
-  /* Style for navbar links */
-.navbar a {
-    text-decoration: none;
-    color: var(--color-800); /* Change this to your desired text color */
-    margin: 0 15px; /* Add spacing between the links */
-    transition: color 0.3s ease-in-out; /* Add a smooth color transition on hover */
-  }
-
-.navbar a:hover {
-    color: #000000; /* Change this to the desired hover color */
-  }
-
-/* Style for the hero section */
-.hero {
-    height: calc(100vh - 49px); /* Set the height to 100% of viewport height */
-    background: url('./images/jk_hero.jpg') left top / cover no-repeat; /* Replace with your image path */
-    display: flex;
-    align-items: center; /* Center content vertically */
-    padding: 0 20px; /* Add padding to the sides */
-  }
-
-  /* Style for the about me text */
-  .hero-about-me {
-    max-width: 50%; /* Limit text width */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow to the text box */
-    margin-left: auto; 
-    color: var(--color-100)
-
-  }
-  
-  /* Style for the text inside the about-me box */
-  .about-me p {
-    margin: 0;
-    font-size: 1.5rem;
-    color: white; /* Set text color to white */
-  }
-  
-
-section h1, h1 {
-    padding: 1rem;
-    padding-bottom: 0;
-    font-size: 2rem
-}
-
-/* Apply styles to the projects section */
-.projects{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));    flex-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 1rem;
-    gap: 30px; /* Add spacing between projects */
-  }
-
-.game {
-    box
-}
-  
-  
-  /* Style for each project */
-  .card {
-    /* width: calc(50% - 15px);  */
-    padding: 1rem;
-    background-color: var(--color-300);
-    border: 2px solid var(--color-800);
-    border-radius: 1rem;
-    display: flex;
-    box-shadow: 0 ;
-    transition: box-shadow 0.35s;
-
-  }
-  .card:hover{
-    box-shadow: .5rem .5rem .5rem var(--color-700);
-  }
-  
-  .game:hover{
-    box-shadow: .5rem .5rem .5rem var(--color-600);
-  }
-
-  /* Style for the project image */
-  .card-bkg {
-    flex: 0 0 40%; 
-    display: block;
-    height: 200px;
-    width: 200px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .card-bkg img {
-    width: 100%;
-    height: 100%;
-    object-fit:contain;
-  }
-    /* Style for the project content */
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    padding: 0 20px;
-
-  }
-
-  .card-content > * {
-    margin-top: 1rem;
-
-  }
-  .card-icons {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  
-  /* Style for the project links */
-  .card-links {
-    margin-top: 1rem;
-    text-align: center;
-  }
-  
-  .card-links a {
-    display: inline-block;
-    padding:0 .5rem;
-    color: #333333;
-  }
- 
-
-  .card-links a:hover {
-    display: inline-block;
-    text-decoration: underline;
-    color: var(--color-600);
-  }
-
-
-.disabled {
-    pointer-events: none;
-    text-decoration: line-through;
-}
-
-.under-construction {
-  border: solid 20px;
-  border-image: repeating-linear-gradient( -75deg, yellow, yellow 10px, black 10px, black 20px) 20;
-  border-radius: 10px;
-}
-
-.game {
-   background-color: var(--color-300);
-}
-
-/* .about-me-paragraphs {
-  display: flex;
-  justify-content: center;
-} */
-
-.about-me-paragraphs p {
-  padding: 1rem;
-  color: var(--color-800);
-  font-size: 1rem;
-
-}
-
-/* Apply styles to the contact section */
-.contact {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 1rem;
-}
-
-.contact h1 {
-  align-self: baseline;
+  margin: 0;
   padding: 0;
+  box-sizing: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+body::-webkit-scrollbar {
+  width: 14px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-800);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--color-800);  /* creates padding around scroll thumb */
 }
 
 
-.contact-info {
-  margin: 0 auto;
-  max-width: 600px;
-  min-width: 360px;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  padding: 1rem;
+html {
+  scroll-behavior: smooth;
 }
 
-.contact-info > * {
-  margin-bottom: 1rem;
+body {
+    font-size: 14px;
+  }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-800);
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s;
 }
 
-.contact-form {
+header a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 2rem;
+  padding: 10px 1rem;
+  align-self: center;
+}
+
+.navbar {
+  font-size: 1.1rem;
+  margin: 1rem;
+  margin-left: 0;
+}
+.navbar a {
+  padding: .4rem;
+}
+
+main {
+  background-color: var(--color-800);
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  background: url('./images/jk_hero.jpg') left top / cover no-repeat;
+  border-radius: 25px;
+  overflow: hidden;
+
+}
+
+.hero .info-text {
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-  border-radius: 10px;
-  padding: .5rem
-}
-
-textarea {
-  resize: none;
-}
-
-/* Style for the contact icons */
-.contact-icons {
-  display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: center;
+  gap: 0.8rem;
+  height: 100vh;
+}
+
+.hero .info-text h1 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.hero .info-text h3,
+.hero .info-text p {
+  font-size: 1rem;
+}
+  
+.hero .info-text .scroll {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  color: #fff;
+  transform: translate(0, -50%);
+  transition: all 0.5s;
+  font-size: 1.4rem;
+}
+
+.hero .info-text .scroll:hover {
+  opacity: 0.5;
+}
+
+#projects,
+#games,
+#about-me,
+#contact {
+  background-color: var(--color-800);
+  padding: 0.5rem 1rem;
+}
+
+.sectionHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+}
+
+.sectionHead h1 {
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #fff;
+}
+
+.sectionContent {
+  display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  /* justify-content: space-between; */
+  gap: 2rem;
+}
+
+.card {
+  padding: 30px;
+  margin: 1rem 0;
+  background-color: var(--color-700);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+  border-radius: 20px;
+  display: flex;
+  gap: 15px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  min-width: 505px; 
+  max-width: 700px; 
   flex: 1;
 }
 
-.icon {
-  /* display: flex;
+.card:hover {
+  border-color: #fff;
+  box-shadow: none;
+}
+
+.card img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255,255,255,0.35);
+
+}
+
+.card-content {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; */
-  font-size: 2rem;
-}
-
-.icon a {
-  text-decoration: none;
-  color: var(--color-800);
-  padding: 1rem;
-  border-radius: 1rem;
-
-  box-shadow: 0;
-  transition: all 0.35s;
-}
-.icon a:hover {
-  box-shadow: .4rem .4rem .4rem var(--color-700);
-  color: var(--color-600)
-}
-
-.icon i {
+  justify-content: center;
   width: 100%;
-  height: 100%;
-  text-align: center;
 }
 
-footer {
+.card-title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.card-summary {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.card-icons {
+  color: var(--icon-color);
+  font-size: 2rem;
+  margin: .5rem 0;
+}
+
+
+.card-links {
+  margin: 1rem 1rem 0 1rem;
   text-align: center;
-  margin: 1rem 0;
+}
+.card-links a {
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(255,255,255,0.35);
+  border: 1px solid transparent;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  background-color: #2b2f4b;
+  text-decoration: none;
+}
+
+.card-links a:hover {
+  border-color: #fff;
+  box-shadow: none;
+}
+
+.about-me-text p {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* TODO add contact stuff */
+.contactIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.contactIcons a {
+  padding: .5rem 2rem;
+  font-size: 3rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.contactIcons a:hover {
+  opacity: 0.5;
+}
+
+footer{
+  background-color: var(--color-800);
+  text-align: center;
+  padding: 1rem;
+}
+footer p{
+  color: #fff;
+}
+
+.scroll-top {
+  display:none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2b2f4b;
+  color: #fff;
+  border: 1px solid transparent;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+  padding: 16px 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.scroll-top:hover {
+  border-color: #fff;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 720px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+  }
+
+  .hero .info-text h1 {
+    font-size: 4rem;
+  }
+
+  .hero .info-text h3,
+  .hero .info-text p {
+    font-size: .9rem;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .card-links a{
+    padding: .5rem;
+  }
 }
