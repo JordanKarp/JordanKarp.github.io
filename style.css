@@ -1,12 +1,40 @@
 :root {
-    --color-800: #132a13;
-    --color-700: #31572c;
-    --color-600: #4f772d;
-    --color-400: #8a9d5a;
-    --color-300: #b7daa2;
-    --color-100: #dfefcf;
-    --icon-color: #aaa;
-}
+    --color-blue: #2b2f4b;
+    --color-1:#717744;
+    --color-2:#373d20;
+    --color-3:#eff1ed;
+    --color-4:#bcbd8b;
+    --color-5:#766153;
+    --shadow-light: rgba(255,255,255,0.35);
+    --shadow-dark: rgba(0,0,0,0.35);
+
+    --scroll-bar-bkg: var(--color-2);
+    --scroll-bar: var(--color-3);
+    --header-bkg: var(--color-2);
+    --header-text: var(--color-3);
+    --main-bkg: var(--color-2);
+    --hero-text: var(--color-4);
+    --hero-head: var(--color-3);
+    --hero-scroll: var(--color-5);
+    --section-head: var(--color-3);
+    --section-head-line: var(--color-5);
+    --card-bkg: var(--color-1);
+    --card-shadow: var(--shadow-dark);
+    --card-hover-border: var(--color-4);
+    --card-img-shadow: var(--shadow-light);
+    --card-title: var(--color-3);
+    --card-text: var(--color-3);
+    --card-icons: var(--color-3);
+    --card-links: var(--color-3);
+    --card-links-bkg: var(--color-2);
+    --card-links-hover-border: var(--color-4);
+    --scroll-up-text: var(--color-3);
+    --scroll-up-bkg: var(--color-5);
+    --scroll-up-shadow: var(--shadow-dark);
+    --scroll-up-hover-border: var(--color-3);
+    --footer-bkg: var(--main-bkg)
+
+  }
 
 * {
   margin: 0;
@@ -21,13 +49,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--color-800);        /* color of the tracking area */
+  background: var(--scroll-bar-bkg);        /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #fff;    /* color of the scroll thumb */
+  background-color: var(--scroll-bar);    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid var(--color-800);  /* creates padding around scroll thumb */
+  border: 3px solid var(--scroll-bar);  /* creates padding around scroll thumb */
 }
 
 
@@ -36,18 +64,18 @@ html {
 }
 
 body {
-    font-size: 14px;
-  }
+  font-size: 14px;
+}
 
 header {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-800);
+  background-color: var(--header-bkg);
   align-items: center;
 }
 header a {
   text-decoration: none;
-  color: #fff;
+  color: var(--header-text);
   transition: all 0.5s;
 }
 
@@ -71,13 +99,13 @@ header a:hover {
 }
 
 main {
-  background-color: var(--color-800);
+  background-color: var(--main-bkg);
 }
 
 .hero {
   width: 100%;
   height: 100vh;
-  color: #fff;
+  color: var(--hero-text);
   background: url('./images/jk_hero.jpg') left top / cover no-repeat;
   border-radius: 25px;
   overflow: hidden;
@@ -94,8 +122,10 @@ main {
 }
 
 .hero .info-text h1 {
+  color: var(--hero-head);
   font-size: 5rem;
   font-weight: 500;
+  padding:1rem;
 }
 
 .hero .info-text h3,
@@ -107,7 +137,7 @@ main {
   position: absolute;
   bottom: 20%;
   left: 50%;
-  color: #fff;
+  color: var(--hero-scroll);
   transform: translate(0, -50%);
   transition: all 0.5s;
   font-size: 1.4rem;
@@ -121,7 +151,6 @@ main {
 #games,
 #about-me,
 #contact {
-  background-color: var(--color-800);
   padding: 0.5rem 1rem;
 }
 
@@ -135,11 +164,11 @@ main {
 
 .sectionHead h1 {
   text-align: left;
-  color: #fff;
+  color: var(--section-head);
   text-transform: uppercase;
   width: 100%;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid #fff;
+  border-bottom: 4px solid var(--section-head-line);
 }
 
 .sectionContent {
@@ -152,28 +181,31 @@ main {
 .card {
   padding: 30px;
   margin: 1rem 0;
-  background-color: var(--color-700);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+  background-color: var(--card-bkg);
+  box-shadow: 0 5px 15px var(--card-shadow);
   border-radius: 20px;
   display: flex;
+  align-items: center;
   gap: 15px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   transition: all 0.3s ease;
-  min-width: 505px; 
-  max-width: 700px; 
+  min-width: 450px;
+  max-width: 700px;
   flex: 1;
+  opacity: .8;
 }
 
 .card:hover {
-  border-color: #fff;
-  box-shadow: none;
+  /* border-color: var(--card-hover-border);
+  box-shadow: none; */
+  opacity: 1;
 }
 
 .card img {
   max-width: 200px;
   max-height: 200px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(255,255,255,0.35);
+  box-shadow: 0 5px 15px var(--card-img-shadow);
 
 }
 
@@ -181,57 +213,64 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
 }
 
 .card-title {
   margin-bottom: 20px;
-  color: #fff;
+  text-align: center;
+  color: var(--card-title);
   font-size: 1.4rem;
   font-weight: bold;
 }
 
 .card-summary {
-  color: #ccc;
+  color: var(--card-text);
   font-size: 1rem;
   line-height: 1.8rem;
 }
 
 .card-icons {
-  color: var(--icon-color);
+  color: var(--card-icons);
   font-size: 2rem;
   margin: .5rem 0;
+  opacity:  0.5;
 }
 
+.card-icons i {
+  opacity:  0.5;
+}
+.card-icons i:hover {
+  opacity:  1;
+}
 
 .card-links {
-  margin: 1rem 1rem 0 1rem;
+  margin-top: 1rem;
   text-align: center;
 }
 .card-links a {
-  color: #fff;
-  box-shadow: 0 5px 15px rgba(255,255,255,0.35);
+  color: var(--card-links);
+  box-shadow: 0 5px 15px rgba(254, 250, 224,0.35);
   border: 1px solid transparent;
   padding: 1rem;
   transition: all 0.3s ease;
   border-radius: 20px;
-  background-color: #2b2f4b;
+  background-color: var(--card-links-bkg);
   text-decoration: none;
 }
 
 .card-links a:hover {
-  border-color: #fff;
+  border-color: var(--card-links-hover-border);
   box-shadow: none;
 }
 
 .about-me-text p {
   color: #fff;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   line-height: 1.5rem;
 }
 
-/* TODO add contact stuff */
 .contactIcons {
   display: flex;
   flex-direction: row;
@@ -252,7 +291,7 @@ main {
 }
 
 footer{
-  background-color: var(--color-800);
+  background-color: var(--footer-bkg);
   text-align: center;
   padding: 1rem;
 }
@@ -265,10 +304,10 @@ footer p{
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #2b2f4b;
-  color: #fff;
+  background-color: var(--scroll-up-bkg);
+  color: var(--scroll-up-text);
   border: 1px solid transparent;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+  box-shadow: 0 5px 15px var(--scroll-up-shadow);
   padding: 16px 18px;
   border-radius: 50%;
   cursor: pointer;
@@ -277,7 +316,7 @@ footer p{
 }
 
 .scroll-top:hover {
-  border-color: #fff;
+  border-color: var(--scroll-up-hover-border);
   box-shadow: none;
 }
 
