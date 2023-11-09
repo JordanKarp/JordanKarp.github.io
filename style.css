@@ -65,6 +65,7 @@ html {
 
 body {
   font-size: 14px;
+
 }
 
 header {
@@ -158,7 +159,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 1.5rem;
 }
 
@@ -196,8 +197,8 @@ main {
 }
 
 .card:hover {
-  /* border-color: var(--card-hover-border);
-  box-shadow: none; */
+  /* border-color: var(--card-hover-border); */
+  box-shadow: none;
   opacity: 1;
 }
 
@@ -235,15 +236,8 @@ main {
   color: var(--card-icons);
   font-size: 2rem;
   margin: .5rem 0;
-  opacity:  0.5;
 }
 
-.card-icons i {
-  opacity:  0.5;
-}
-.card-icons i:hover {
-  opacity:  1;
-}
 
 .card-links {
   margin-top: 1rem;
@@ -252,7 +246,7 @@ main {
 .card-links a {
   color: var(--card-links);
   box-shadow: 0 5px 15px rgba(254, 250, 224,0.35);
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   padding: 1rem;
   transition: all 0.3s ease;
   border-radius: 20px;
