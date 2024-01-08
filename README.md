@@ -2,7 +2,7 @@
 
 <div align="center">
   <kbd>
-    <img src="https://i.imgur.com/zdY3ZC9.png" />
+    <img src="./images/jk_hero.png" />
   </kbd>
 </div>
 
