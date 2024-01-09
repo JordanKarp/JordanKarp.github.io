@@ -1,40 +1,39 @@
 :root {
-    --color-blue: #2b2f4b;
-    --color-1:#717744;
-    --color-2:#373d20;
-    --color-3:#eff1ed;
-    --color-4:#bcbd8b;
-    --color-5:#766153;
-    --shadow-light: rgba(255,255,255,0.35);
-    --shadow-dark: rgba(0,0,0,0.35);
+  --color-blue: #2b2f4b;
+  --color-1: #717744;
+  --color-2: #373d20;
+  --color-3: #eff1ed;
+  --color-4: #bcbd8b;
+  --color-5: #766153;
+  --shadow-light: rgba(255, 255, 255, 0.35);
+  --shadow-dark: rgba(0, 0, 0, 0.35);
 
-    --scroll-bar-bkg: var(--color-2);
-    --scroll-bar: var(--color-3);
-    --header-bkg: var(--color-2);
-    --header-text: var(--color-3);
-    --main-bkg: var(--color-2);
-    --hero-text: var(--color-4);
-    --hero-head: var(--color-3);
-    --hero-scroll: var(--color-5);
-    --section-head: var(--color-3);
-    --section-head-line: var(--color-5);
-    --card-bkg: var(--color-1);
-    --card-shadow: var(--shadow-dark);
-    --card-hover-border: var(--color-4);
-    --card-img-shadow: var(--shadow-light);
-    --card-title: var(--color-3);
-    --card-text: var(--color-3);
-    --card-icons: var(--color-3);
-    --card-links: var(--color-3);
-    --card-links-bkg: var(--color-2);
-    --card-links-hover-border: var(--color-4);
-    --scroll-up-text: var(--color-3);
-    --scroll-up-bkg: var(--color-5);
-    --scroll-up-shadow: var(--shadow-dark);
-    --scroll-up-hover-border: var(--color-3);
-    --footer-bkg: var(--main-bkg)
-
-  }
+  --scroll-bar-bkg: var(--color-2);
+  --scroll-bar: var(--color-3);
+  --header-bkg: var(--color-2);
+  --header-text: var(--color-3);
+  --main-bkg: var(--color-2);
+  --hero-text: var(--color-4);
+  --hero-head: var(--color-3);
+  --hero-scroll: var(--color-5);
+  --section-head: var(--color-3);
+  --section-head-line: var(--color-5);
+  --card-bkg: var(--color-1);
+  --card-shadow: var(--shadow-dark);
+  --card-hover-border: var(--color-4);
+  --card-img-shadow: var(--shadow-light);
+  --card-title: var(--color-3);
+  --card-text: var(--color-3);
+  --card-icons: var(--color-3);
+  --card-links: var(--color-3);
+  --card-links-bkg: var(--color-2);
+  --card-links-hover-border: var(--color-4);
+  --scroll-up-text: var(--color-3);
+  --scroll-up-bkg: var(--color-5);
+  --scroll-up-shadow: var(--shadow-dark);
+  --scroll-up-hover-border: var(--color-3);
+  --footer-bkg: var(--main-bkg)
+}
 
 * {
   margin: 0;
@@ -44,18 +43,24 @@
   box-sizing: border-box;
   max-width: 100%;
 }
+
 body::-webkit-scrollbar {
-  width: 14px;               /* width of the entire scrollbar */
+  width: 14px;
+  /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--scroll-bar-bkg);        /* color of the tracking area */
+  background: var(--scroll-bar-bkg);
+  /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--scroll-bar);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid var(--scroll-bar);  /* creates padding around scroll thumb */
+  background-color: var(--scroll-bar);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid var(--scroll-bar);
+  /* creates padding around scroll thumb */
 }
 
 
@@ -74,6 +79,7 @@ header {
   background-color: var(--header-bkg);
   align-items: center;
 }
+
 header a {
   text-decoration: none;
   color: var(--header-text);
@@ -83,6 +89,7 @@ header a {
 header a:hover {
   text-decoration: underline;
 }
+
 
 .logo {
   font-size: 2rem;
@@ -95,6 +102,7 @@ header a:hover {
   margin: 1rem;
   margin-left: 0;
 }
+
 .navbar a {
   padding: .4rem;
 }
@@ -134,14 +142,14 @@ main {
   color: var(--hero-head);
   font-size: 5rem;
   font-weight: 500;
-  padding:1rem;
+  padding: 1rem;
 }
 
 .hero .info-text h3,
 .hero .info-text p {
   font-size: 1rem;
 }
-  
+
 .hero .info-text .scroll {
   position: absolute;
   bottom: 20%;
@@ -251,9 +259,10 @@ main {
   margin-top: 1rem;
   text-align: center;
 }
+
 .card-links a {
   color: var(--card-links);
-  box-shadow: 0 5px 15px rgba(254, 250, 224,0.35);
+  box-shadow: 0 5px 15px rgba(254, 250, 224, 0.35);
   border: 2px solid transparent;
   padding: 1rem;
   transition: all 0.3s ease;
@@ -267,9 +276,17 @@ main {
   box-shadow: none;
 }
 
+.about-me-text {
+  margin: 0 auto;
+}
+
+
 .about-me-text p {
   color: #fff;
-  /* font-size: 1rem; */
+  max-width: 75ch;
+  font-size: 1.15rem;
+
+  margin-bottom: .5rem;
   line-height: 1.5rem;
 }
 
@@ -292,17 +309,18 @@ main {
   opacity: 0.5;
 }
 
-footer{
+footer {
   background-color: var(--footer-bkg);
   text-align: center;
   padding: 1rem;
 }
-footer p{
+
+footer p {
   color: #fff;
 }
 
 .scroll-top {
-  display:none;
+  display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -349,7 +367,8 @@ footer p{
     max-width: 150px;
     max-height: 150px;
   }
-  .card-links a{
+
+  .card-links a {
     padding: .5rem;
   }
 }
